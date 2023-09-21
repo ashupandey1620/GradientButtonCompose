@@ -9,7 +9,6 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -18,7 +17,6 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -49,6 +47,8 @@ class MainActivity : ComponentActivity() {
                 ){
                     val cornerRadius = 16.dp
                     Spacer(modifier = Modifier.height(8.dp))
+
+                    //pink and dark pink
                     val gradientColor = listOf(Color(0xFFff00cc), Color(0xFF333399))
                     GradientButton(
                         gradientColors = gradientColor,
@@ -57,6 +57,7 @@ class MainActivity : ComponentActivity() {
                         roundedCornerShape = RoundedCornerShape(topStart = 30.dp)
                     )
 
+                    //light yellow and dark yellow
                     val gradientColor2 = listOf(Color(0xFFFDEB71), Color(0xFFF8D800))
                     GradientButton(
                         gradientColors = gradientColor2,
@@ -65,6 +66,7 @@ class MainActivity : ComponentActivity() {
                         roundedCornerShape = RoundedCornerShape(topEnd = 30.dp)
                     )
 
+                    //blue and dark blue
                     val gradientColor3 = listOf(Color(0xFFABDCFF), Color(0xFF0396FF))
                     GradientButton(
                         gradientColors = gradientColor3,
@@ -73,13 +75,58 @@ class MainActivity : ComponentActivity() {
                         roundedCornerShape = RoundedCornerShape(bottomStart = 30.dp)
                     )
 
-
+                    //orange and dark orange
                     val gradientColor4 = listOf(Color(0xFFFEB692), Color(0xFFEA5455))
                     GradientButton(
                         gradientColors = gradientColor4,
                         cornerRadius = cornerRadius,
                         nameButton = "Style: top End",
                         roundedCornerShape = RoundedCornerShape(bottomEnd = 30.dp)
+                    )
+
+                    //lavender and dark lavender
+                    val gradientColor5 = listOf(Color(0xFFCE9FFC), Color(0xFF7367F0))
+                    GradientButton(
+                        gradientColors = gradientColor5,
+                        cornerRadius = cornerRadius,
+                        nameButton = "Style: top End",
+                        roundedCornerShape = RoundedCornerShape(topStart = 30.dp , bottomEnd = 30.dp)
+                    )
+
+                    //cyan and dark cyan
+                    val gradientColor6 = listOf(Color(0xFF90F7EC), Color(0xFF32CCBC))
+                    GradientButton(
+                        gradientColors = gradientColor6,
+                        cornerRadius = cornerRadius,
+                        nameButton = "Style: top End",
+                        roundedCornerShape = RoundedCornerShape(bottomStart = 30.dp, topEnd = 30.dp)
+                    )
+
+                    //dark cyan and blue
+                    val gradientColor7 = listOf(Color(0xFF2AFADF), Color(0xFF4C83FF))
+                    GradientButton(
+                        gradientColors = gradientColor7,
+                        cornerRadius = cornerRadius,
+                        nameButton = "Style: top End",
+                        roundedCornerShape = RoundedCornerShape(topStart = 30.dp , bottomEnd = 30.dp,bottomStart = 30.dp, topEnd = 30.dp)
+                    )
+
+                    //cyan and dark cyan
+                    val gradientColor8 = listOf(Color(0xFF90F7EC), Color(0xFF32CCBC))
+                    GradientButton(
+                        gradientColors = gradientColor8,
+                        cornerRadius = cornerRadius,
+                        nameButton = "Disabled Button",
+                        roundedCornerShape = RoundedCornerShape(bottomStart = 30.dp, topEnd = 30.dp)
+                    )
+
+                    //Normal Cyan
+                    val gradientColor9 = listOf(Color(0xFF65FDF0), Color(0xFF1D6FA3))
+                    GradientButton(
+                        gradientColors = gradientColor9,
+                        cornerRadius = cornerRadius,
+                        nameButton = "No Ripple",
+                        roundedCornerShape = RoundedCornerShape(bottomStart = 30.dp, topEnd = 30.dp)
                     )
                 }
             }
