@@ -53,7 +53,7 @@ class MainActivity : ComponentActivity() {
                     GradientButton(
                         gradientColors = gradientColor,
                         cornerRadius = cornerRadius,
-                        nameButton = "Style: top Start",
+                        nameButton = "topStart",
                         roundedCornerShape = RoundedCornerShape(topStart = 30.dp)
                     )
 
@@ -62,7 +62,7 @@ class MainActivity : ComponentActivity() {
                     GradientButton(
                         gradientColors = gradientColor2,
                         cornerRadius = cornerRadius,
-                        nameButton = "Style: top End",
+                        nameButton = "topEnd",
                         roundedCornerShape = RoundedCornerShape(topEnd = 30.dp)
                     )
 
@@ -71,7 +71,7 @@ class MainActivity : ComponentActivity() {
                     GradientButton(
                         gradientColors = gradientColor3,
                         cornerRadius = cornerRadius,
-                        nameButton = "Style: top End",
+                        nameButton = "bottomStart",
                         roundedCornerShape = RoundedCornerShape(bottomStart = 30.dp)
                     )
 
@@ -80,7 +80,7 @@ class MainActivity : ComponentActivity() {
                     GradientButton(
                         gradientColors = gradientColor4,
                         cornerRadius = cornerRadius,
-                        nameButton = "Style: top End",
+                        nameButton = "bottomEnd",
                         roundedCornerShape = RoundedCornerShape(bottomEnd = 30.dp)
                     )
 
@@ -89,7 +89,7 @@ class MainActivity : ComponentActivity() {
                     GradientButton(
                         gradientColors = gradientColor5,
                         cornerRadius = cornerRadius,
-                        nameButton = "Style: top End",
+                        nameButton = "topStart and bottomEnd",
                         roundedCornerShape = RoundedCornerShape(topStart = 30.dp , bottomEnd = 30.dp)
                     )
 
@@ -98,7 +98,7 @@ class MainActivity : ComponentActivity() {
                     GradientButton(
                         gradientColors = gradientColor6,
                         cornerRadius = cornerRadius,
-                        nameButton = "Style: top End",
+                        nameButton = "bottomStart and topEnd",
                         roundedCornerShape = RoundedCornerShape(bottomStart = 30.dp, topEnd = 30.dp)
                     )
 
@@ -107,7 +107,7 @@ class MainActivity : ComponentActivity() {
                     GradientButton(
                         gradientColors = gradientColor7,
                         cornerRadius = cornerRadius,
-                        nameButton = "Style: top End",
+                        nameButton = "All Side",
                         roundedCornerShape = RoundedCornerShape(topStart = 30.dp , bottomEnd = 30.dp,bottomStart = 30.dp, topEnd = 30.dp)
                     )
 
@@ -116,7 +116,7 @@ class MainActivity : ComponentActivity() {
                     GradientButton(
                         gradientColors = gradientColor8,
                         cornerRadius = cornerRadius,
-                        nameButton = "Disabled Button",
+                        nameButton = "disabled Button",
                         roundedCornerShape = RoundedCornerShape(bottomStart = 30.dp, topEnd = 30.dp)
                     )
 
@@ -126,6 +126,14 @@ class MainActivity : ComponentActivity() {
                         gradientColors = gradientColor9,
                         cornerRadius = cornerRadius,
                         nameButton = "No Ripple",
+                        roundedCornerShape = RoundedCornerShape(bottomStart = 30.dp, topEnd = 30.dp)
+                    )
+
+                    val gradientColor10 = listOf(Color(0xFFF6D2F2), Color(0xFFFF52E5))
+                    GradientButton(
+                        gradientColors = gradientColor10,
+                        cornerRadius = cornerRadius,
+                        nameButton = "bottomStart and topEnd",
                         roundedCornerShape = RoundedCornerShape(bottomStart = 30.dp, topEnd = 30.dp)
                     )
                 }
