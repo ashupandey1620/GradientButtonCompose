@@ -70,7 +70,7 @@ class MainActivity : ComponentActivity() {
                         gradientColors = gradientColor3,
                         cornerRadius = cornerRadius,
                         nameButton = "Style: top End",
-                        roundedCornerShape = RoundedCornerShape(topEnd = 30.dp)
+                        roundedCornerShape = RoundedCornerShape(bottomStart = 30.dp)
                     )
 
 
@@ -79,7 +79,7 @@ class MainActivity : ComponentActivity() {
                         gradientColors = gradientColor4,
                         cornerRadius = cornerRadius,
                         nameButton = "Style: top End",
-                        roundedCornerShape = RoundedCornerShape(topEnd = 30.dp)
+                        roundedCornerShape = RoundedCornerShape(bottomEnd = 30.dp)
                     )
                 }
             }
