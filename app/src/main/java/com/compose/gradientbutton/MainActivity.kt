@@ -64,6 +64,23 @@ class MainActivity : ComponentActivity() {
                         nameButton = "Style: top End",
                         roundedCornerShape = RoundedCornerShape(topEnd = 30.dp)
                     )
+
+                    val gradientColor3 = listOf(Color(0xFFABDCFF), Color(0xFF0396FF))
+                    GradientButton(
+                        gradientColors = gradientColor3,
+                        cornerRadius = cornerRadius,
+                        nameButton = "Style: top End",
+                        roundedCornerShape = RoundedCornerShape(topEnd = 30.dp)
+                    )
+
+
+                    val gradientColor4 = listOf(Color(0xFFFEB692), Color(0xFFEA5455))
+                    GradientButton(
+                        gradientColors = gradientColor4,
+                        cornerRadius = cornerRadius,
+                        nameButton = "Style: top End",
+                        roundedCornerShape = RoundedCornerShape(topEnd = 30.dp)
+                    )
                 }
             }
         }
